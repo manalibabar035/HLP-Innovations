@@ -58,3 +58,8 @@ function showService(serviceId) {
 document.addEventListener('DOMContentLoaded', () => {
     showService('service1');
 });
+
+function toggleMenu() {
+    const menuList = document.querySelector('.menu-list');
+    menuList.classList.toggle('show');
+}
