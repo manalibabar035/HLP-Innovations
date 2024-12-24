@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HLP Innovations</title>
+    <link rel="icon" href="images/favicon-16x16.png" type="image/x-icon">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+            <img src="images/logo-3.JPG" alt="HLP Innovations Logo" class="logo-img">
+        </div>
+        <nav class="menu">
+            <ul class="menu-list">
+                <li><a href="#home" class="menu-item">Home</a></li>
+                <li><a href="html/services.html" class="menu-item">Services</a></li>
+                <li><a href="html/products.html" class="menu-item">Products</a></li>
+                <li><a href="html/aboutus.html" class="menu-item">About Us</a></li>
+                <li><a href="html/contact.html" class="menu-item">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <video class="hero-video" autoplay muted loop>
+                <source src="images/background-3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero-text">
+                <h1>
+                    <span class="line-title">Revolutionizing Healthcare with AI</span>
+                </h1>
+                <p>
+                    <span class="line">Delivering cutting-edge medical devices, AI-driven software solutions, and transformative innovations to empower a healthier tomorrow.</span>
+                </p>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="service-list">
+                <ul>
+                    <li class="service-item selected" onclick="showService('service1')">Medical device Distribution</li>
+                    <li class="service-item" onclick="showService('service2')">AI Healthcare Solutions</li>
+                    <li class="service-item" onclick="showService('service3')">Medtech & Software Solutions</li>
+                    <li class="service-item" onclick="showService('service4')">Regulatory compliance</li>
+                </ul>
+            </div>
+
+            <div class="service-detail">
+                <div id="service1" class="service-description">
+                    <p>We provide seamless distribution services for medical devices, ensuring fast and reliable delivery to healthcare providers. Our solutions enhance accessibility and improve patient care across a wide range of clinical environments, making sure medical devices reach the right place at the right time.</p>
+                    <a href="service1.html" class="service-link">Our medical devices distribution services</a>
+                </div>
+                <div id="service2" class="service-description">
+                    <p>We leverage artificial intelligence to create solutions that optimize clinical decision-making, improve patient outcomes, and enhance operational efficiency within healthcare systems.</p>
+                    <a href="service1.html" class="service-link">Our AI healthcare solution services</a>
+                </div>
+                <div id="service3" class="service-description">
+                    <p>We design innovative software tailored to the Medtech industry, integrating advanced technologies to streamline workflows and elevate patient care and safety.</p>
+                    <a href="service1.html" class="service-link">Our medtech & software solution services</a>
+                </div>
+                <div id="service4" class="service-description">
+                    <p>Our expert team helps healthcare organizations navigate complex regulatory requirements, ensuring compliance with global standards to maintain product quality and safeguard patient safety.</p>
+                    <a href="service1.html" class="service-link">Our regulatory compliance services</a>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="about-us" class="about-us">
+            <div class="about-us-content">
+                <div class="about-us-image">
+                    <img src="images/about-us.jpeg" alt="Who We Are" class="about-us-image animate-on-scroll" />
+                </div>
+                <div class="about-us-text">
+                    <h2 class="animate-on-scroll">Who We Are</h2>
+                    <p class="animate-on-scroll">
+                        HLP Innovations is built on the foundation of innovation, integrity, and excellence. We are committed to delivering cutting-edge solutions that drive progress, foster collaboration, and achieve impactful results for our clients and partners.
+                    </p>
+                    <br>
+                    <a href="html/aboutus.html" class="service-link">Learn more</a>
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="products" class="products">
+            <div class="products-content">
+                
+                <div class="products-text">
+                    <h2 class="animate-on-scroll">Explore our products</h2>
+                    <p class="animate-on-scroll">
+                        Revolutionizing healthcare through the development of advanced medical devices, harnessing the power of AI and the latest technologies to enhance diagnostics and patient outcomes.
+                    </p>
+                    <br>
+                    <a href="html/products.html" class="service-link">Learn more</a>
+                </div>
+                <div class="products-image">
+                    <img src="images/mri-machine.jpeg" alt="Our Products" class="products-image animate-on-scroll" />
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="about-us" class="about-us">
+            <div class="about-us-content">
+                <div class="about-us-image">
+                    <img src="images/networking.jpeg" alt="Let's Talk Business" class="about-us-image animate-on-scroll" />
+                </div>
+                <div class="about-us-text">
+                    <h2 class="animate-on-scroll">Let's talk business</h2>
+                    <p class="animate-on-scroll">
+                        Reach out to us for innovative solutions, collaborations, or inquiries—your gateway to cutting-edge medical technology and AI-driven advancements.
+                    </p>
+                    <br>
+                    <a href="html/contact.html" class="service-link">Learn more</a>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>&copy; 2024 HLP INNOVATIONS | All rights reserved.</p>
+</footer>
+
+
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>

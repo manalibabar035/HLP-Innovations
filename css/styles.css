@@ -1,0 +1,351 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: white;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 30px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+.logo-img {
+    width: 150px;
+    height: auto;
+    padding-left: 25px;
+    transition: transform 0.3s;
+}
+
+.menu {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-item {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.menu-item:hover {
+    color: #f39c12;
+    transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero {
+    margin-top: 60px;
+    position: relative;
+    height: calc(90vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: -60px;
+    left: 0;
+    width: 100%;
+    height: calc(100 - 60px);
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(50%);
+}
+
+.hero-text h1, .hero-text p {
+    display: block;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+.line {
+    display: block;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeSlideUp 1.5s ease-out forwards;
+}
+
+@keyframes fadeSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    margin-bottom: 50px; /* Add space between sections */
+    margin-top: 100px;
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;  
+    padding-bottom: 50px;  
+    padding-left: 150px;
+}
+
+.service-list {
+    width: 30%;
+}
+
+/* Remove bullet points and right-align list items */
+.service-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    padding-right: 50px;
+    border-right: 2px solid #f39c12;  /* Add vertical line after the service list */
+}
+
+.service-item {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+    display: block;
+    text-align: right; /* Right justify text */
+    padding-bottom: 25px;
+}
+
+.service-item:hover {
+    color: #f39c12;
+}
+
+
+.service-item:hover {
+    color: #f39c12;
+}
+
+.service-item.selected {
+    color: #f39c12;
+}
+
+
+.service-detail {
+    width: 65%;
+}
+
+.service-description {
+    display: none;
+}
+
+.service-description h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.service-description p {
+    font-size: 1.1rem;
+}
+
+.service-link {
+    color: #f39c12;
+    text-decoration: none;
+}
+
+.service-link:hover {
+    text-decoration: underline;
+}
+
+.service-link::after {
+    content: " >";
+    color: #f39c12;
+    font-size: 25px; /* Adjust the size as needed */
+}
+
+.about-us-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    gap: 20px;
+    background-color: #000; /* Match the website's theme */
+    margin-top: 20px;
+}
+
+.about-us-content {
+    display: flex;
+    flex-direction: row-reverse; /* Image on the right, text on the left */
+    gap: 20px;
+    align-items: center;
+}
+
+.about-us-text {
+    flex: 1;
+    color: white;
+    text-align: right;
+}
+
+.about-us-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #f39c12;
+    font-weight: 300;
+}
+
+.about-us-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.about-us-image {
+    flex: 1;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 75px;
+}
+
+.about-us-image img {
+    max-width: 60vh;
+    height: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Optional shadow */
+}
+
+.products-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    gap: 20px;
+    background-color: #000; /* Match the website's theme */
+    margin-top: 20px;
+}
+
+.products-content {
+    display: flex;
+    flex-direction: row-reverse; /* Image on the right, text on the left */
+    gap: 20px;
+    align-items: center;
+}
+
+.products-text {
+    flex: 1;
+    color: white;
+    text-align: left;
+}
+
+.products-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #f39c12;
+    font-weight: 300;
+}
+
+.products-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.products-image {
+    flex: 1;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 75px;
+}
+
+.products-image img {
+    max-width: 60vh;
+    height: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Optional shadow */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .services {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .service-list, .service-detail {
+        width: 100%;
+    }
+
+    .menu-list {
+        flex-direction: column;
+    }
+
+    .menu-item {
+        margin: 10px 0;
+    }
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #000;
+    color: white;
+    font-size: 0.9rem;
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+/* Initial state for text before scrolling into view */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Final state for text when the animation is triggered */
+.animate-on-scroll.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+

@@ -1,0 +1,345 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: white;
+    line-height: 1.6;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes full viewport height */
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #f39c12;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+.logo-img {
+    width: 125px;
+    height: auto;
+    padding-left: 25px;
+    transition: transform 0.3s;
+}
+
+.logo-img:hover {
+    transform: scale(1.1);
+}
+
+.menu {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-item {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 30vh; /* Hero section is 30% of the viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0; /* Remove any margin */
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(50%);
+}
+
+.hero-text {
+    position: relative;
+    padding-top: 75px; /* Adjust the top padding for the hero text */
+    z-index: 1;
+    color: white;
+}
+
+/* Contact Section */
+.about-us-section {
+    display: flex;
+    flex-direction: column; /* Stack the items vertically */
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Adjusted height for the section */
+    text-align: center;
+    background-color: #000;
+    margin-top: 0; /* Remove any margin on top */
+}
+
+.about-us-section h1 {
+    font-size: 3rem; /* Adjust the font size */
+    color: white;
+    font-weight: 700;
+    margin: 0; /* Remove margin between heading and hero section */
+    text-align: center; /* Ensure text is horizontally centered */
+    margin-bottom: 20px; /* Add space below the heading */
+}
+
+.about-us-section p {
+    font-size: 1.25rem; /* Adjust the font size for paragraph */
+    color: white;
+    line-height: 1.6; /* For better readability */
+    margin: 0;
+    padding: 0 15px; /* Add some padding for mobile responsiveness */
+    text-align: center;
+}
+
+.heading {
+    color: #f39c12;
+    text-decoration: none;
+    font-size: 1.75rem; /* Adjust the font size */
+    font-weight: 700;
+    margin: 0; /* Remove margin between heading and hero section */
+    text-align: center; /* Ensure text is horizontally centered */
+    margin-bottom: 20px; /* Add space below the heading */
+}
+
+/* Contact Section */
+.about-us-section {
+    display: flex;
+    flex-direction: column; /* Stack the items vertically */
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Adjusted height for the section */
+    text-align: center;
+    background-color: #000;
+    margin-top: 0; /* Remove any margin on top */
+    margin-bottom: 5%;
+}
+
+.about-us-section h2 {
+    font-size: 2rem; /* Adjust the font size */
+    color: #f39c12;
+    font-weight: 300;
+    margin: 0; /* Remove margin between heading and hero section */
+    text-align: center; /* Ensure text is horizontally centered */
+    margin-bottom: 20px; /* Add space below the heading */
+}
+
+.about-us-section p {
+    font-size: 1.25rem; /* Adjust the font size for paragraph */
+    color: white;
+    line-height: 1.6; /* For better readability */
+    margin: 0;
+    padding: 0 15px; /* Add some padding for mobile responsiveness */
+    text-align: center;
+}
+
+.who-are-we-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    gap: 20px;
+    background-color: #000; /* Match the website's theme */
+    margin-top: 20px;
+}
+
+.who-are-we-content {
+    display: flex;
+    flex-direction: row-reverse; /* Image on the right, text on the left */
+    gap: 20px;
+    align-items: center;
+}
+
+.who-are-we-text {
+    flex: 1;
+    color: white;
+    text-align: right;
+    padding-right: 30px;
+    border-right: 2px solid #f39c12; /* Add a dividing line */
+}
+
+.who-are-we-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #f39c12;
+    font-weight: 300;
+}
+
+.who-are-we-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.who-are-we-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.who-are-we-image img {
+    max-width: 75%;
+    height: auto;
+    border-radius: 10px; /* Optional rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Optional shadow */
+}
+
+.what-we-do-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    gap: 20px;
+    background-color: #000; /* Match the website's theme */
+    margin-top: 100px;
+}
+
+.what-we-do-content {
+    display: flex;
+    flex-direction: row-reverse; /* Image on the right, text on the left */
+    gap: 20px;
+    align-items: center;
+}
+
+.what-we-do-text {
+    flex: 1;
+    color: white;
+    text-align: left;
+    padding-left: 30px;
+    border-left: 2px solid #f39c12; /* Add a dividing line */
+}
+
+.what-we-do-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #f39c12;
+    font-weight: 300;
+}
+
+.what-we-do-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.what-we-do-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.what-we-do-image img {
+    max-width: 75%;
+    height: auto;
+    border-radius: 10px; /* Optional rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Optional shadow */
+}
+
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #000;
+    color: white;
+    font-size: 0.9rem;
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        margin-top: 10px;
+    }
+
+    .menu-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .google-maps {
+        max-width: 100%;
+    }
+}
+
+/* Fade-in effect */
+@keyframes fadeIn {
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Slide-up effect for hero text */
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade-in from bottom for contact info and google map */
+@keyframes fadeInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
