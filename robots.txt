@@ -1,4 +1,5 @@
 User-agent: *
-Allow: /
+Disallow: /private/
+Allow: /public/
 
 Sitemap: https://www.hlpinnovations.com/sitemap.xml
