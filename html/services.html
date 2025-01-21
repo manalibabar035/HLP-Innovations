@@ -1,153 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HLP Innovations</title>
-    <link rel="icon" href="../images/favicon-16x16.png" type="image/x-icon">
-
-    <!-- Preconnect to Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Font Awesome Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-
-    <!-- CSS File -->
-    <link rel="stylesheet" href="../css/services.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    
 </head>
 <body>
     <!-- Header Section -->
+
     <header class="header">
         <div class="logo">
-            <img src="../images/logo-3.JPG" alt="HLP Innovations Logo" class="logo-img">
+            <img src="../images/HLP.png" alt="HLP Innovations Logo" class="logo-img" loading="lazy">
         </div>
         <nav class="menu">
             <ul class="menu-list">
                 <li><a href="../index.html" class="menu-item">Home</a></li>
-                <li><a href="#services" class="menu-item">Services</a></li>
+                <li><a href="../html/aboutus.html" class="menu-item">About us</a></li>
+                <li><a href="#" class="menu-item">Services</a></li>
                 <li><a href="../html/products.html" class="menu-item">Products</a></li>
-                <li><a href="../html/aboutus.html" class="menu-item">About Us</a></li>
-                <li><a href="../html/contact.html" class="menu-item">Contact</a></li>
+                <li><a href="../html/blog.html" class="menu-item">Blog</a></li>
+                <li><a href="../html/careers.html" class="menu-item">Careers</a></li>
+                <li><a href="../html/contact.html" class="menu-item contact">Contact Us</a></li>
             </ul>
         </nav>
-        <!-- Hamburger Icon -->
-        <div class="hamburger" onclick="toggleMenu()">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
         </div>
-    </header>
-
+      </header>
+    
     <!-- Main Content -->
-    <main>
-        <!-- Hero Section -->
-        <section id="home" class="hero">
-            <video class="hero-video" autoplay muted loop>
+    <main id="main-content">
+        <section id="home-contact" class="hero-contact">
+            <!-- <video class="hero-video" autoplay muted loop>
                 <source src="../images/background-2.mp4" type="video/mp4">
                 Your browser does not support the video tag.
-            </video>
-            <div class="hero-text">
+            </video> -->
+            <div class="hero-text-contact">
                 <h1>Services</h1>
             </div>
         </section>
-
-        <section id="services" class="services">
-            <div class="services-grid">
-                <!-- Service 1 -->
-                <div class="service-item">
-                    <img src="../images/medical-device-distribution.jpeg" alt="Medical device Distribution" class="service-image">
-                    <h3>Medical device Distribution</h3>
-                    <p>We provide seamless distribution services for medical devices, ensuring fast and reliable delivery to healthcare providers. Our solutions enhance accessibility and improve patient care across a wide range of clinical environments.</p>
-                </div>
         
-                <!-- Service 2 -->
-                <div class="service-item">
-                    <img src="../images/ai-solutions.jpeg" alt="AI Healthcare Solutions" class="service-image">
-                    <h3>AI Healthcare Solutions</h3>
-                    <p>We leverage artificial intelligence to create solutions that optimize clinical decision-making, improve patient outcomes, and enhance operational efficiency within healthcare systems.</p>
-                </div>
-        
-                <!-- Service 3 -->
-                <div class="service-item">
-                    <img src="../images/software-solutions.jpeg" alt="Medtech & Software Solutions" class="service-image">
-                    <h3>Medtech & Software Solutions</h3>
-                    <p>We design innovative software tailored to the Medtech industry, integrating advanced technologies to streamline workflows and elevate patient care and safety.</p>
-                </div>
-        
-                <!-- Service 4 -->
-                <div class="service-item">
-                    <img src="../images/telemedicine.jpeg" alt="Regulatory compliance" class="service-image">
-                    <h3>Telemedicine and Remote monitoring Solutions</h3>
-                    <p>We provide AI-powered platforms that enable teleconsultation, patient monitoring, and virtual healthcare. We also offer wearables or IoT devices integrated with AI to track patient health metrics.</p>
-                </div>
-
-                <!-- Service 5 -->
-                <div class="service-item">
-                    <img src="../images/data-analytics.jpeg" alt="Regulatory compliance" class="service-image">
-                    <h3>Health Data Analytics</h3>
-                    <p>Our expers offer predictive analytics services for hospitals to manage patient influx, optimize resources, and reduce wait times.We provide customized dashboards for actionable insights into patient care and financial performance.</p>
-                </div>
-
-                <!-- Service 6 -->
-                <div class="service-item">
-                    <img src="../images/blockchain.jpeg" alt="Regulatory compliance" class="service-image">
-                    <h3>Blockchain in Healthcare</h3>
-                    <p>We develop secure, decentralized systems for patient data storage, insurance claims, and clinical trial records.We have partnered with hospitals for secure, tamper-proof medical data sharing.</p>
-                </div>
-
-                <!-- Service 7 -->
-                <div class="service-item">
-                    <img src="../images/imaging.jpeg" alt="Regulatory compliance" class="service-image">
-                    <h3>Medical Imaging solutions</h3>
-                    <p>We provide AI-powered diagnostic tools for early disease detection such as cancer, cardiovascular issues, etc. We specialize in affordable imaging solutions tailored to smaller clinics.</p>
-                </div>
-
-                <!-- Service 8 -->
-                <div class="service-item">
-                    <img src="../images/certification.jpeg" alt="Regulatory compliance" class="service-image">
-                    <h3>Training and certification programs</h3>
-                    <p>We offer training for healthcare staff on AI usage in diagnostics, compliance, and operational efficiency. We also provide certifications for medical professionals to stay updated with tech trends.</p>
-                </div>
-
-                <!-- Service 9 -->
-                <div class="service-item">
-                    <img src="../images/AR-VR.jpeg" alt="Regulatory compliance" class="service-image">
-                    <h3>Virtual and augmented reality (VR/AR) in Healthcare</h3>
-                    <p>We offer VR/AR solutions for surgical simulations, patient education, and therapy.</p>
-                </div>
-                <!-- Service 10 -->
-                <div class="service-item">
-                    <img src="../images/sustainability.jpeg" alt="Regulatory compliance" class="service-image">
-                    <h3>Sustainability Solutions</h3>
-                    <p>Our experts are working on introducing eco-friendly solutions like energy-efficient medical devices and AI systems for resource management in hospitals.Helping healthcare facilities reduce carbon footprints.</p>
-                </div>
-                <!-- Service 11 -->
-                <div class="service-item">
-                    <img src="../images/sterlization.jpeg" alt="Regulatory compliance" class="service-image">
-                    <h3>Sterlization and AI hygiene management services for hospitals </h3>
-                    <p>We provide sterlization and AI hygiene management services that are critical for the hospitals and laboratories to maintian infection control and adhere to healthcare standards. </p>
-                </div>
-                <!-- Service 12 -->
-                <div class="service-item">
-                    <img src="../images/regulatory-compliance.jpeg" alt="Regulatory compliance" class="service-image">
-                    <h3>Regulatory compliance</h3>
-                    <p>Our expert team helps healthcare organizations navigate complex regulatory requirements, ensuring compliance with global standards to maintain product quality and safeguard patient safety.</p>
-                </div>
+        <section id="services" class="services-main">
+          <div class="services-grid">
+              <!-- Service 1 -->
+              <div class="service-item">
+                  <img src="../images/software-solutions.jpeg" alt="Software solutions" class="service-image" loading="lazy">
+                  <h3>Custom Software Development</h3>
+                  <p>Design bespoke software tailored to healthcare challenges, enabling improved workflows, patient outcomes, and organisational efficiency.</p>
+              </div>
+      
+              <!-- Service 2 -->
+              <div class="service-item">
+                  <img src="../images/cloud.jpeg" alt="Cloud technologies" class="service-image" loading="lazy">
+                  <h3>Cloud Transformation</h3>
+                  <p>Transform healthcare infrastructure by migrating to the cloud for greater scalability, security, and cost efficiency.</p>
+              </div>
+      
+              <!-- Service 3 -->
+              <div class="service-item">
+                  <img src="../images/digital-transformation.jpeg" alt="Digital Transformation Strategies" class="service-image" loading="lazy">
+                  <h3>Digital Transformation Strategies</h3>
+                  <p>Strategies the digitalisation of healthcare operations, leveraging advanced technologies for a patient-centred approach.</p>
+              </div>
+      
+              <!-- Service 4 -->
+            <div class="service-item">
+              <img src="../images/medical-device-distribution.jpeg" alt="MedTech and Pharma Solutions" class="service-image" loading="lazy">
+              <h3>MedTech and Pharma Solutions</h3>
+              <p>Innovate solutions for medical technology and pharmaceutical needs, enhancing R&D, supply chain, and compliance.</p>
             </div>
-        </section>
+
+            <!-- Service 5 -->
+            <div class="service-item">
+              <img src="../images/ai-solutions.jpeg" alt="AI Health Data Analytics" class="service-image" loading="lazy">
+              <h3>AI Health Data Analytics</h3>
+              <p>Analyse complex healthcare data using AI to uncover actionable insights, empowering personalised treatments and better decision-making.</p>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="service-item">
+              <img src="../images/blockchain.jpeg" alt="Blockchain in Healthcare" class="service-image" loading="lazy">
+              <h3>Blockchain in Healthcare</h3>
+              <p>Implement blockchain to ensure data security, transparency, and interoperability, transforming healthcare data management.</p>
+            </div>
+
+            <!-- Service 7 -->
+            <div class="service-item">
+              <img src="../images/telemedicine.jpeg" alt="Telemedicine and Remote Monitoring Solutions" class="service-image" loading="lazy">
+              <h3>Telemedicine and Remote Monitoring Solutions</h3>
+              <p>Build robust Telehealth and remote monitoring platforms, enabling real-time care and continuous patient-provider interaction.</p>
+            </div>
+
+            <!-- Service 8 -->
+            <div class="service-item">
+              <img src="../images/imaging.jpeg" alt="AI Medical Imaging Solutions" class="service-image" loading="lazy">
+              <h3>AI Medical Imaging Solutions</h3>
+              <p>Enhance medical imaging accuracy with AI-driven diagnostic tools for faster, more reliable clinical outcomes.</p>
+            </div>
+
+            <!-- Service 9 -->
+            <div class="service-item">
+              <img src="../images/sterlization.jpeg" alt="Sterilization and AI Hygiene Management" class="service-image" loading="lazy">
+              <h3>Sterilization and AI Hygiene Management</h3>
+              <p>Use AI to automate hygiene management and sterilization processes, ensuring safer environments and compliance with health standards.</p>
+            </div>
+
+            <!-- Service 10 -->
+            <div class="service-item">
+              <img src="../images/regulatory-compliance.jpeg" alt="Regulatory Compliance Automation" class="service-image" loading="lazy">
+              <h3>Regulatory Compliance Automation</h3>
+              <p>Simplify and automate compliance with healthcare regulations, reducing administrative overhead and mitigating compliance risks.</p>
+            </div>
+
+            <!-- Service 11 -->
+            <div class="service-item">
+              <img src="../images/patient-engagement.jpeg" alt="AI-Powered Patient Engagement Platforms" class="service-image" loading="lazy">
+              <h3>AI-Powered Patient Engagement Platforms</h3>
+              <p>Leverage AI to develop platforms that enhance patient interactions, improving adherence to treatment plans and overall satisfaction.</p>
+            </div>
+
+            <!-- Service 12 -->
+            <div class="service-item">
+              <img src="../images/smart-wearables.jpeg" alt="Smart Wearables Integration" class="service-image" loading="lazy">
+              <h3>Smart Wearables Integration</h3>
+              <p>Integrate wearable devices with healthcare systems for real-time monitoring and proactive patient care insights.</p>
+            </div>
+
+            <!-- Service 13 -->
+            <div class="service-item">
+              <img src="../images/robotic-automation.jpeg" alt="Robotic Process Automation for Healthcare" class="service-image" loading="lazy">
+              <h3>Robotic Process Automation (RPA) for Healthcare</h3>
+              <p>Automate repetitive tasks in healthcare operations, driving efficiency and reducing human error.</p>
+            </div>
+
+            <!-- Service 14 -->
+            <div class="service-item">
+              <img src="../images/AR-VR.jpeg" alt="Virtual Reality and Augmented Reality in Healthcare" class="service-image" loading="lazy">
+              <h3>Virtual Reality (VR) and Augmented Reality (AR) in Healthcare</h3>
+              <p>Provide immersive technologies for medical training, surgery, and rehabilitation, enhancing the quality of care and learning.</p>
+            </div>
+
+            <!-- Service 15 -->
+            <div class="service-item">
+              <img src="../images/clinical-trial.jpeg" alt="AI-Driven Clinical Trials Management" class="service-image" loading="lazy">
+              <h3>AI-Driven Clinical Trials Management</h3>
+              <p>Streamline clinical trials with AI to improve design, participant selection, and monitoring, accelerating drug development.</p>
+            </div>
+
+          </div>
+      </section>
+        
         
     </main>
+       
+    <footer id="footer" class="footer">
+        <div class="footer-image">
+          <img src="../images/footer.jpeg" alt="Footer Image" class="footer-bg-image" loading="lazy">
+        </div>
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+              <div class="col footer-info">
+                <p>HLP Innovations</p>
+              </div>
+              <div class="col footer-links-menu">
+                <h4>Useful Links</h4>
+                <ul>
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="../html/aboutus.html">About us</a></li>
+                  <li><a href="../html/services.html">Services</a></li>
+                  <li><a href="../html/products.html">Products</a></li>
+                  <li><a href="../html/blog.html">Blog</a></li>
+                  <li><a href="html/careers.html">Careers</a></li>
+                  <li><a href="https://hlpinnovations.com/sitemap/">Sitemap</a></li>
+                </ul>
+              </div>
+              <div class="col footer-links">
+                <h4>Our Services</h4>
+                <ul>
+                  <li><a href="../html/services.html">Custom Software Development</a></li>
+                  <li><a href="../html/services.html">Cloud Transformation</a></li>
+                  <li><a href="../html/services.html">Digital Transformation Strategies</a></li>
+                  <li><a href="../html/services.html">Medtech and Pharma Solutions</a></li>
+                  <li><a href="../html/services.html"> AI Healthcare Analytics</a></li>
+                  <li><a href="../html/services.html">Blockchain in Healthcare</a></li>
+                </ul>
+              </div>
+              <div class="col footer-contact text-center text-md-start">
+                <h4>Contact Us</h4>
+                <p>
+                  <strong>Phone:&nbsp;</strong><a href="tel:+919652294557">+91 96522 94557</a><br>
+                  <strong>Email:&nbsp;</strong><a href="mailto:hlpinnovations6@gmail.com">hlpinnovations6@gmail.com</a><br> 
+                </p>
+                <div class="social-links mt-3">
+                  <a class="youtube" target="_blank" href="http://www.youtube.com/@HLPInnovations" title="Visit us on youtube" rel="noopener noreferrer">
+                    <img src="../images/youtube.png" alt="Youtube" class="social-icon" loading="lazy">
+                  </a>
+                  <a class="instagram" target="_blank" href="https://instagram.com/hlp_innovations" title="Visit us on Instagram" rel="noopener noreferrer">
+                    <img src="../images/instagram.png" alt="Instagram" class="social-icon" loading="lazy">
+                  </a>
+                  <a class="linkedin" target="_blank" href="https://www.linkedin.com/company/hlp-innovations" title="Visit us on LinkedIn" rel="noopener noreferrer">
+                    <img src="../images/linkedin.png" alt="LinkedIn" class="social-icon" loading="lazy">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="copyright">
+            &copy; <span>2025</span> HLP Innovations | All Rights Reserved.
+          </div>
+        </div>
+      </footer>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2024 HLP INNOVATIONS | All rights reserved.</p>
-    </footer>
-
-    <!-- JavaScript -->
-    <script src="../js/script.js" defer></script>
+    <script src="../script.js" defer></script>
 </body>
 </html>
+
+
+

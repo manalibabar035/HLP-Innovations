@@ -1,72 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HLP Innovations</title>
-    <link rel="icon" href="../images/favicon-16x16.png" type="image/x-icon">
-
-    <!-- Preconnect to Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Font Awesome Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-
-    <!-- CSS File -->
-    <link rel="stylesheet" href="../css/products.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    
 </head>
 <body>
     <!-- Header Section -->
+
     <header class="header">
         <div class="logo">
-            <img src="../images/logo-3.JPG" alt="HLP Innovations Logo" class="logo-img">
+            <img src="../images/HLP.png" alt="HLP Innovations Logo" class="logo-img" loading="lazy">
         </div>
         <nav class="menu">
             <ul class="menu-list">
                 <li><a href="../index.html" class="menu-item">Home</a></li>
+                <li><a href="../html/aboutus.html" class="menu-item">About us</a></li>
                 <li><a href="../html/services.html" class="menu-item">Services</a></li>
-                <li><a href="#products" class="menu-item">Products</a></li>
-                <li><a href="../html/aboutus.html" class="menu-item">About Us</a></li>
-                <li><a href="../html/contact.html" class="menu-item">Contact</a></li>
+                <li><a href="#" class="menu-item">Products</a></li>
+                <li><a href="../html/blog.html" class="menu-item">Blog</a></li>
+                <li><a href="../html/careers.html" class="menu-item">Careers</a></li>
+                <li><a href="../html/contact.html" class="menu-item contact">Contact Us</a></li>
             </ul>
         </nav>
-        <!-- Hamburger Icon -->
-        <div class="hamburger" onclick="toggleMenu()">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
         </div>
-    </header>
-
+      </header>
+    
     <!-- Main Content -->
-    <main>
-        <!-- Hero Section -->
-        <section id="home" class="hero">
-            <video class="hero-video" autoplay muted loop>
+    <main id="main-content">
+        <section id="home-contact" class="hero-contact">
+            <!-- <video class="hero-video" autoplay muted loop>
                 <source src="../images/background-2.mp4" type="video/mp4">
                 Your browser does not support the video tag.
-            </video>
-            <div class="hero-text">
+            </video> -->
+            <div class="hero-text-contact">
                 <h1>Products</h1>
             </div>
         </section>
-
-        <!-- Contact and Map Section -->
-        <section class="contact-section">
-            <h1> Coming soon...</h1>
+        
+        <section id="coming-soon" class="coming-soon-section">
+          <img src="../images/coming-soon.jpeg" alt="Coming soon Image" class="coming-soon-bg-image" loading="lazy">
         </section>
+        
+        
     </main>
+       
+    <footer id="footer" class="footer">
+        <div class="footer-image">
+          <img src="../images/footer.jpeg" alt="Footer Image" class="footer-bg-image" loading="lazy">
+        </div>
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+              <div class="col footer-info">
+                <p>HLP Innovations</p>
+              </div>
+              <div class="col footer-links-menu">
+                <h4>Useful Links</h4>
+                <ul>
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="../html/aboutus.html">About us</a></li>
+                  <li><a href="../html/services.html">Services</a></li>
+                  <li><a href="../html/products.html">Products</a></li>
+                  <li><a href="../html/blog.html">Blog</a></li>
+                  <li><a href="html/careers.html">Careers</a></li>
+                  <li><a href="https://hlpinnovations.com/sitemap/">Sitemap</a></li>
+                </ul>
+              </div>
+              <div class="col footer-links">
+                <h4>Our Services</h4>
+                <ul>
+                  <li><a href="../html/services.html">Custom Software Development</a></li>
+                  <li><a href="../html/services.html">Cloud Transformation</a></li>
+                  <li><a href="../html/services.html">Digital Transformation Strategies</a></li>
+                  <li><a href="../html/services.html">Medtech and Pharma Solutions</a></li>
+                  <li><a href="../html/services.html"> AI Healthcare Analytics</a></li>
+                  <li><a href="../html/services.html">Blockchain in Healthcare</a></li>
+                </ul>
+              </div>
+              <div class="col footer-contact text-center text-md-start">
+                <h4>Contact Us</h4>
+                <p>
+                  <strong>Phone:&nbsp;</strong><a href="tel:+919652294557">+91 96522 94557</a><br>
+                  <strong>Email:&nbsp;</strong><a href="mailto:hlpinnovations6@gmail.com">hlpinnovations6@gmail.com</a><br> 
+                </p>
+                <div class="social-links mt-3">
+                  <a class="youtube" target="_blank" href="http://www.youtube.com/@HLPInnovations" title="Visit us on youtube" rel="noopener noreferrer">
+                    <img src="../images/youtube.png" alt="Youtube" class="social-icon" loading="lazy">
+                  </a>
+                  <a class="instagram" target="_blank" href="https://instagram.com/hlp_innovations" title="Visit us on Instagram" rel="noopener noreferrer">
+                    <img src="../images/instagram.png" alt="Instagram" class="social-icon" loading="lazy">
+                  </a>
+                  <a class="linkedin" target="_blank" href="https://www.linkedin.com/company/hlp-innovations" title="Visit us on LinkedIn" rel="noopener noreferrer">
+                    <img src="../images/linkedin.png" alt="LinkedIn" class="social-icon" loading="lazy">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="copyright">
+            &copy; <span>2025</span> HLP Innovations | All Rights Reserved.
+          </div>
+        </div>
+      </footer>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2024 HLP INNOVATIONS | All rights reserved.</p>
-    </footer>
-
-    <!-- JavaScript -->
-    <script src="../js/script.js" defer></script>
+    <script src="../script.js" defer></script>
 </body>
 </html>
+
+
+

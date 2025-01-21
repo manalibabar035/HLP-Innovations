@@ -1,114 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HLP Innovations</title>
-    <link rel="icon" href="../images/favicon-16x16.png" type="image/x-icon">
-
-    <!-- Preconnect to Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Font Awesome Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-
-    <!-- CSS File -->
-    <link rel="stylesheet" href="../css/aboutus.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    
 </head>
 <body>
     <!-- Header Section -->
+
     <header class="header">
         <div class="logo">
-            <img src="../images/logo-3.JPG" alt="HLP Innovations Logo" class="logo-img">
+            <img src="../images/HLP.png" alt="HLP Innovations Logo" class="logo-img" loading="lazy">
         </div>
         <nav class="menu">
             <ul class="menu-list">
                 <li><a href="../index.html" class="menu-item">Home</a></li>
+                <li><a href="#" class="menu-item">About us</a></li>
                 <li><a href="../html/services.html" class="menu-item">Services</a></li>
                 <li><a href="../html/products.html" class="menu-item">Products</a></li>
-                <li><a href="#aboutus.html" class="menu-item">About Us</a></li>
-                <li><a href="../html/contact.html" class="menu-item">Contact</a></li>
+                <li><a href="../html/blog.html" class="menu-item">Blog</a></li>
+                <li><a href="../html/careers.html" class="menu-item">Careers</a></li>
+                <li><a href="../html/contact.html" class="menu-item contact">Contact Us</a></li>
             </ul>
         </nav>
-        <!-- Hamburger Icon -->
-        <div class="hamburger" onclick="toggleMenu()">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
         </div>
-    </header>
-
+      </header>
+    
     <!-- Main Content -->
-    <main>
-        <!-- Hero Section -->
-        <section id="home" class="hero">
-            <video class="hero-video" autoplay muted loop>
-                <source src="../images/background-2.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div class="hero-text">
-                <h1>About Us</h1>
-            </div>
-        </section>
-
-        <section class="about-us-section">
-            <h2>HLP INNOVATIONS</h2>
-            <p>HLP Innovations is built on the foundation of innovation, integrity, and excellence. We are committed to delivering cutting-edge solutions that drive progress, foster collaboration, and achieve impactful results for our clients and partners.</p>
-        </section>
-
-        <section class="who-are-we-section">
-            <div class="who-are-we-content">
-                <div class="who-are-we-image">
-                    <img src="../images/who-are-we.jpeg" alt="Who We Are" />
-                </div>
-                <div class="who-are-we-text">
-                    <h2>Who Are We</h2>
-                    <p>
-                        HLP Innovations is a dynamic organization at the forefront of transforming the healthcare and technology landscape. 
-                        We specialize in the distribution of advanced medical devices, the development of groundbreaking MedTech, and software solutions that redefine the standards of care. 
-                        Our expertise in AI solutions and seamless system integration empowers healthcare providers with smarter, more efficient tools to enhance patient outcomes. 
-                        Beyond technology, we offer robust regulatory compliance support, guiding our partners through the complexities of healthcare regulations with precision and care.With a vision to innovate and a passion for excellence, we are committed to addressing the challenges of the medical industry. 
-                        From enhancing operational efficiency to driving clinical advancements, we aim to be a trusted partner in delivering high-quality solutions. At HLP Innovations, we don’t just meet the standards—we strive to set new ones, ensuring our clients are always at the cutting edge of healthcare innovation. 
-                        Whether it’s empowering healthcare professionals or improving patient lives, we are dedicated to making a meaningful impact in everything we do.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section class="what-we-do-section">
-            <div class="what-we-do-content">
-                <div class="what-we-do-text">
-                    <h2>What We Do</h2>
-                    <p>
-                        At HLP Innovations, we craft solutions that bridge the gap between technology and healthcare. 
-                        Our core focus lies in the distribution of cutting-edge medical devices, tailored to meet the diverse needs of healthcare providers. 
-                        We innovate in the MedTech space, designing and developing technologies that elevate medical practices and improve patient outcomes.
-                        Our expertise extends to software development, where we create powerful applications and platforms tailored for the healthcare sector. 
-                        Leveraging the latest in AI and machine learning, we offer intelligent solutions and seamless system integrations that streamline processes and enhance decision-making.
-                        We also provide comprehensive regulatory compliance support, ensuring that our clients navigate the complexities of healthcare regulations with confidence and precision. 
-                        Whether it’s product development, deployment, or adherence to global standards, we deliver end-to-end solutions with unwavering commitment to quality and excellence.
-                        From transforming healthcare delivery to enabling advanced technology adoption, HLP Innovations is dedicated to making a positive, lasting impact on the healthcare industry.
-                    </p>
-                </div>
-
-                <div class="what-we-do-image">
-                    <img src="../images/what-we-do.jpeg" alt="What We Do" />
-                </div>
-
+    <main id="main-content">
+        <section id="home-contact" class="hero-about-us"></section>
+            <div class="hero-text-about-us">
+                <h1>About us</h1>
             </div>
         </section>
         
+        <section class="about-us-section">
+          <h2>HLP INNOVATIONS</h2>
+          <p>HLP Innovations is built on the foundation of innovation, integrity, and excellence. We are committed to delivering cutting-edge solutions that drive progress, foster collaboration, and achieve impactful results for our clients and partners.</p>
+      </section>
+
+      <section class="who-are-we-section">
+          <div class="who-are-we-content">
+              <div class="who-are-we-image">
+                  <img src="../images/who-are-we.jpeg" alt="Who We Are" loading="lazy"/>
+              </div>
+              <div class="who-are-we-text">
+                  <h2>Who Are We</h2>
+                  <p>
+                      HLP Innovations is a dynamic organization at the forefront of transforming the healthcare and technology landscape. 
+                      We specialize in the distribution of advanced medical devices, the development of groundbreaking MedTech, and software solutions that redefine the standards of care. 
+                      Our expertise in AI solutions and seamless system integration empowers healthcare providers with smarter, more efficient tools to enhance patient outcomes. 
+                      Beyond technology, we offer robust regulatory compliance support, guiding our partners through the complexities of healthcare regulations with precision and care.With a vision to innovate and a passion for excellence, we are committed to addressing the challenges of the medical industry. 
+                      From enhancing operational efficiency to driving clinical advancements, we aim to be a trusted partner in delivering high-quality solutions.
+              </div>
+          </div>
+      </section>
+      <section class="what-we-do-section">
+          <div class="what-we-do-content">
+              <div class="what-we-do-text">
+                  <h2>What We Do</h2>
+                  <p>
+                      At HLP Innovations, we craft solutions that bridge the gap between technology and healthcare. 
+                      Our core focus lies in the distribution of cutting-edge medical devices, tailored to meet the diverse needs of healthcare providers. 
+                      We innovate in the MedTech space, designing and developing technologies that elevate medical practices and improve patient outcomes.
+                      Our expertise extends to software development, where we create powerful applications and platforms tailored for the healthcare sector. 
+                      Leveraging the latest in AI and machine learning, we offer intelligent solutions and seamless system integrations that streamline processes and enhance decision-making.
+                      We also provide comprehensive regulatory compliance support, ensuring that our clients navigate the complexities of healthcare regulations with confidence and precision. 
+                  </p>
+              </div>
+
+              <div class="what-we-do-image">
+                  <img src="../images/what-we-do.jpeg" alt="What We Do" loading="lazy" />
+              </div>
+
+          </div>
+      </section>
+      <section id="why-choose-us-head" class="why-choose-us-head">
+        <h1> VALUES</h1>
+      </section>
+      <section class="why-choose-us">
+        <div class="why-choose-item">
+            <div class="box">
+                <h3>Innovation</h3>
+                <img src="../images/idea.png" alt="Global Image" class="why-choose-image" loading="lazy">
+                <p>Embrace technology and creativity to pioneer transformative solutions for modern healthcare challenges. </p>
+            </div>
+        </div>
+        <div class="why-choose-item">
+            <div class="box">
+                <h3>Quality</h3>
+                <img src="../images/service.png" alt="Virtual Assistance Image" class="why-choose-image" loading="lazy">
+                <p>Excellence is at the core of everything we do, ensuring reliable and impactful results for patients and providers.</p>
+            </div>
+        </div>
+        <div class="why-choose-item">
+            <div class="box">
+                <h3>Collaboration</h3>
+                <img src="../images/collaboration.png" alt="24/7 Support Image" class="why-choose-image" loading="lazy">
+                <p>We believe in fostering strong partnerships with healthcare professionals, organizations, and communities to drive change together.</p>
+            </div>
+        </div>
+    </section>
+        
+        
     </main>
+       
+    <footer id="footer" class="footer">
+        <div class="footer-image">
+          <img src="../images/footer.jpeg" alt="Footer Image" class="footer-bg-image" loading="lazy">
+        </div>
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+              <div class="col footer-info">
+                <p>HLP Innovations</p>
+              </div>
+              <div class="col footer-links-menu">
+                <h4>Useful Links</h4>
+                <ul>
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="../html/aboutus.html">About us</a></li>
+                  <li><a href="../html/services.html">Services</a></li>
+                  <li><a href="../html/products.html">Products</a></li>
+                  <li><a href="../html/blog.html">Blog</a></li>
+                  <li><a href="html/careers.html">Careers</a></li>
+                  <li><a href="https://hlpinnovations.com/sitemap/">Sitemap</a></li>
+                </ul>
+              </div>
+              <div class="col footer-links">
+                <h4>Our Services</h4>
+                <ul>
+                  <li><a href="../html/services.html">Custom Software Development</a></li>
+                  <li><a href="../html/services.html">Cloud Transformation</a></li>
+                  <li><a href="../html/services.html">Digital Transformation Strategies</a></li>
+                  <li><a href="../html/services.html">Medtech and Pharma Solutions</a></li>
+                  <li><a href="../html/services.html"> AI Healthcare Analytics</a></li>
+                  <li><a href="../html/services.html">Blockchain in Healthcare</a></li>
+                </ul>
+              </div>
+              <div class="col footer-contact text-center text-md-start">
+                <h4>Contact Us</h4>
+                <p>
+                  <strong>Phone:&nbsp;</strong><a href="tel:+919652294557">+91 96522 94557</a><br>
+                  <strong>Email:&nbsp;</strong><a href="mailto:hlpinnovations6@gmail.com">hlpinnovations6@gmail.com</a><br> 
+                </p>
+                <div class="social-links mt-3">
+                  <a class="youtube" target="_blank" href="http://www.youtube.com/@HLPInnovations" title="Visit us on youtube" rel="noopener noreferrer">
+                    <img src="../images/youtube.png" alt="Youtube" class="social-icon" loading="lazy">
+                  </a>
+                  <a class="instagram" target="_blank" href="https://instagram.com/hlp_innovations" title="Visit us on Instagram" rel="noopener noreferrer">
+                    <img src="../images/instagram.png" alt="Instagram" class="social-icon" loading="lazy">
+                  </a>
+                  <a class="linkedin" target="_blank" href="https://www.linkedin.com/company/hlp-innovations" title="Visit us on LinkedIn" rel="noopener noreferrer">
+                    <img src="../images/linkedin.png" alt="LinkedIn" class="social-icon" loading="lazy">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="copyright">
+            &copy; <span>2025</span> HLP Innovations | All Rights Reserved.
+          </div>
+        </div>
+      </footer>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2024 HLP INNOVATIONS | All rights reserved.</p>
-    </footer>
-
-    <!-- JavaScript -->
-    <script src="../js/script.js" defer></script>
+    <script src="../script.js" defer></script>
 </body>
 </html>
+
+
+
