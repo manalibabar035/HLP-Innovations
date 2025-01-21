@@ -318,7 +318,7 @@ main {
 }
 
 .service-image-index {
-    width: 50%;
+    width: 100%;
     height: 50%;
     object-fit:contain;
     animation: fadeInBottom 0.75s forwards 0.5s; /* Slightly slower fade-in */
