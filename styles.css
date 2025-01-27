@@ -354,7 +354,7 @@ main {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    padding: 25px 75px;
+    padding: 25px 50px;
     background-color: #000;
 }
 
@@ -365,7 +365,7 @@ main {
 
 .box-industries {
     background-color: #000;
-    padding: 35px;
+    padding: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: auto;
     height: 50vh;
@@ -393,11 +393,6 @@ main {
 .industries-grid-index {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* Adjusted to 2 columns */
-    gap: 1.5rem;
-    /* Space between grid items */
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 /* ============================
@@ -531,7 +526,6 @@ main {
 
 .contact-us-content {
     display: flex;
-    width: 100%;
     max-width: 1200px;
     gap: 20px;
     /* Space between text and image */
@@ -547,9 +541,7 @@ main {
 
 .contact-us-index {
     display: flex;
-    width: 100%;
     gap: 30px;
-    /* Space between text and image */
 }
 
 .contact-text {
