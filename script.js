@@ -3,40 +3,41 @@ document.addEventListener('DOMContentLoaded', () => {
     const hamburger = document.querySelector('.hamburger');
     const menuList = document.querySelector('.menu-list');
     const header = document.querySelector('.header');
-    const dropdown = document.getElementById('service-dropdown')
+    const dropdown = document.getElementById('service-dropdown');
     const enquireButton = document.getElementById("enquire-button");
     const animateElements = document.querySelectorAll('.animate-on-scroll');
-    
 
     // Toggle the menu and hamburger icon state on click
-    hamburger.addEventListener('click', () => {
-        const headerHeight = header.offsetHeight; // Get the height of the header
-        menuList.style.top = `${headerHeight}px`; // Set the menu to start after the header
-        menuList.classList.toggle('show');
-        hamburger.classList.toggle('active');
-    });
+    if (hamburger) {
+        hamburger.addEventListener('click', () => {
+            const headerHeight = header.offsetHeight; // Get the height of the header
+            menuList.style.top = `${headerHeight}px`; // Set the menu to start after the header
+            menuList.classList.toggle('show');
+            hamburger.classList.toggle('active');
+        });
+    }
 
-    if(enquireButton) {
+    // Email enquiry button functionality
+    if (enquireButton) {
         enquireButton.addEventListener("click", function () {
             const recipient = "hlpinnovations6@gmail.com";
             const subject = encodeURIComponent("Enquiry about services");
             const body = encodeURIComponent(
                 `Hi Team,
-    
-    I would like to enquire about your services. Please provide more details.
-    
-    Best regards,
-    [Your Name]
-    [Your Contact Information]`
+
+I would like to enquire about your services. Please provide more details.
+
+Best regards,
+[Your Name]
+[Your Contact Information]`
             );
-    
+
             const mailtoLink = `mailto:${recipient}?subject=${subject}&body=${body}`;
             window.location.href = mailtoLink;
         });
     }
 
-    
-
+    // Scroll animation function
     const handleScroll = () => {
         animateElements.forEach((element) => {
             const rect = element.getBoundingClientRect();
@@ -48,46 +49,53 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initial check in case some elements are already in view
     handleScroll();
-
-    // Add event listener for scroll
     window.addEventListener('scroll', handleScroll);
 
-
-    // Show Selected Service and Highlight it
+    // Function to show the selected service
     function showService(serviceId) {
         // Hide all service descriptions
-        const allServices = document.querySelectorAll('.service-description');
-        allServices.forEach(service => {
+        document.querySelectorAll('.service-description').forEach(service => {
             service.style.display = 'none';
         });
 
-        // Show selected service description
+        // Show the selected service description
         const selectedService = document.getElementById(serviceId);
-        selectedService.style.display = 'block';
+        if (selectedService) {
+            selectedService.style.display = 'block';
+        }
 
         // Remove 'selected' class from all service items
-        const serviceItems = document.querySelectorAll('.service-item-index');
-        serviceItems.forEach(item => item.classList.remove('selected'));
+        document.querySelectorAll('.service-item-index').forEach(item => item.classList.remove('selected'));
 
         // Highlight the clicked service item
-        const selectedItem = document.querySelector(`.service-item-index[onclick="showService('${serviceId}')"]`);
-        selectedItem.classList.add('selected');
+        const selectedItem = document.querySelector(`.service-item-index[data-service="${serviceId}"]`);
+        if (selectedItem) {
+            selectedItem.classList.add('selected');
+        }
+
+        // Ensure dropdown reflects the selection
+        if (dropdown) {
+            dropdown.value = serviceId;
+        }
     }
 
-    dropdown.addEventListener('change', (e) => {
-        if(e && e.target && e.target.value) {
-            showService(e?.target?.value)
-        }
+    // Event listener for dropdown change
+    if (dropdown) {
+        dropdown.addEventListener('change', (e) => {
+            if (e.target.value) {
+                showService(e.target.value);
+            }
+        });
+    }
+
+    // Event listener for service list item clicks
+    document.querySelectorAll('.service-item-index').forEach(item => {
+        item.addEventListener('click', function () {
+            const serviceId = this.getAttribute('data-service');
+            showService(serviceId);
+        });
     });
-    showService('service1'); // Ensure service1 is visible
-    const firstService = document.getElementById('service1');
-    firstService.style.display = 'block'; // Explicitly show it
+
+    // Show the default service on page load
+    showService('service1');
 });
-
-
-
-
-
-
-
-

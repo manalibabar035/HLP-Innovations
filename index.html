@@ -99,12 +99,12 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services-head" class="services-head">
-      <h1> OUR SERVCIES</h1>
-    </section>
-    <section id="services" class="services">
-      <div class="services-dropdown-container">
-        <select id="service-dropdown">
+<section id="services-head" class="services-head">
+  <h1>OUR SERVICES</h1>
+</section>
+<section id="services" class="services">
+  <div class="services-dropdown-container">
+      <select id="service-dropdown">
           <option value="service1">Custom Software Development</option>
           <option value="service2">Cloud Transformation</option>
           <option value="service3">Medtech and Pharma Solutions</option>
@@ -113,85 +113,65 @@
           <option value="service6">Telemedicine Solutions</option>
           <option value="service7">AI Medical Imaging</option>
           <option value="service8">Regulatory Compliance Automation</option>
-        </select>
-      </div>
-      <div class="service-list">
-        <ul>
-          <li class="service-item-index selected" onclick="showService('service1')">Custom Software Development</li>
-          <li class="service-item-index" onclick="showService('service2')">Cloud Transformation</li>
-          <li class="service-item-index" onclick="showService('service3')">Medtech and Pharma Solutions</li>
-          <li class="service-item-index" onclick="showService('service4')">AI Health Data Analytics</li>
-          <li class="service-item-index" onclick="showService('service5')">Blockchain in Healthcare</li>
-          <li class="service-item-index" onclick="showService('service6')">Telemedicine Solutions</li>
-          <li class="service-item-index" onclick="showService('service7')">AI Medical Imaging</li>
-          <li class="service-item-index" onclick="showService('service8')">Regulatory Compliance Automation</li>
+      </select>
+  </div>
+  <div class="service-list">
+      <ul>
+          <li class="service-item-index selected" data-service="service1">Custom Software Development</li>
+          <li class="service-item-index" data-service="service2">Cloud Transformation</li>
+          <li class="service-item-index" data-service="service3">Medtech and Pharma Solutions</li>
+          <li class="service-item-index" data-service="service4">AI Health Data Analytics</li>
+          <li class="service-item-index" data-service="service5">Blockchain in Healthcare</li>
+          <li class="service-item-index" data-service="service6">Telemedicine Solutions</li>
+          <li class="service-item-index" data-service="service7">AI Medical Imaging</li>
+          <li class="service-item-index" data-service="service8">Regulatory Compliance Automation</li>
+      </ul>
+  </div>
 
-
-        </ul>
-      </div>
-
-
-      <div class="service-detail">
-        <div id="service1" class="service-description">
+  <div class="service-detail">
+      <div id="service1" class="service-description" style="display: block;">
           <img src="images/software-solutions.jpeg" alt="Software solutions" class="service-image-index" loading="lazy">
-          <p>Our custom software solutions are designed to address the unique challenges of your industry. From
-            streamlining workflows to enhancing operational efficiency, we develop tailored tools to drive success and
-            innovation. Let us help you transform your business processes with technology built to meet your needs.</p>
+          <p>Our custom software solutions are designed to address the unique challenges of your industry...</p>
           <a href="html/services.html" class="service-link-index">Learn more</a>
-        </div>
-        <div id="service2" class="service-description">
-          <img src="images/cloud.jpeg" alt="Cloud Transformation" class="service-image-index" loading="lazy">
-          <p>Modernize your infrastructure with our secure and scalable cloud solutions. We help you migrate seamlessly
-            to the cloud, unlocking greater flexibility, enhanced security, and significant cost savings. Empower your
-            organization with cutting-edge cloud technology.</p>
-          <a href="html/services.html" class="service-link-index">Learn more</a>
-        </div>
-        <div id="service3" class="service-description">
-          <img src="images/ai-solutions.jpeg" alt="Medtech" class="service-image-index" loading="lazy">
-          <p>Stay ahead in medical technology and pharmaceuticals with our innovative solutions. We streamline R&D,
-            optimize supply chains, and ensure compliance, enabling your organization to deliver better healthcare
-            products. Trust us to drive advancements that matter.</p>
-          <a href="html/services.html" class="service-link-index">Learn more</a>
-        </div>
-        <div id="service4" class="service-description">
-          <img src="images/data-analytics.jpeg" alt="Data analytics" class="service-image-index" loading="lazy">
-          <p>Unlock the potential of your healthcare data with our AI-powered analytics. Our solutions uncover
-            actionable insights, enabling personalized treatments and informed decision-making. Transform raw data into
-            meaningful outcomes for improved patient care.</p>
-          <a href="html/services.html" class="service-link-index">Learn more</a>
-        </div>
-        <div id="service5" class="service-description">
-          <img src="images/blockchain.jpeg" alt="Blockchain" class="service-image-index" loading="lazy">
-          <p>Revolutionize healthcare data management with blockchain technology. Our solutions ensure secure,
-            transparent, and interoperable systems for seamless data exchange. Protect sensitive information and enhance
-            trust across your organization.</p>
-          <a href="html/services.html" class="service-link-index">Learn more</a>
-        </div>
-        <div id="service6" class="service-description">
-          <img src="images/telemedicine.jpeg" alt="Telemedicine" class="service-image-index" loading="lazy">
-          <p>Deliver real-time care and continuous engagement with our robust telehealth platforms. We design solutions
-            that enable remote monitoring and patient-provider interactions, ensuring accessible and quality healthcare
-            anytime, anywhere.</p>
-          <a href="html/services.html" class="service-link-index">Learn more</a>
-        </div>
-        <div id="service7" class="service-description">
-          <img src="images/mri-machine.jpeg" alt="AI Imaging" class="service-image-index" loading="lazy">
-          <p>Enhance diagnostic accuracy and speed with AI-powered medical imaging tools. Our innovative solutions
-            provide reliable results for improved clinical outcomes. Equip your team with the tools to make informed
-            decisions faster.</p>
-          <a href="html/services.html" class="service-link-index">Learn more</a>
-        </div>
-        <div id="service8" class="service-description">
-          <img src="images/regulatory-compliance.jpeg" alt="Regulatory compliance" class="service-image-index"
-            loading="lazy">
-          <p>Simplify compliance with healthcare regulations using our automated solutions. We reduce administrative
-            overhead and help you stay ahead of complex requirements. Focus on delivering care while we handle the
-            compliance challenges.</p>
-          <a href="html/services.html" class="service-link-index">Learn more</a>
-        </div>
-
       </div>
-    </section>
+      <div id="service2" class="service-description">
+          <img src="images/cloud.jpeg" alt="Cloud Transformation" class="service-image-index" loading="lazy">
+          <p>Modernize your infrastructure with our secure and scalable cloud solutions...</p>
+          <a href="html/services.html" class="service-link-index">Learn more</a>
+      </div>
+      <div id="service3" class="service-description">
+          <img src="images/ai-solutions.jpeg" alt="Medtech" class="service-image-index" loading="lazy">
+          <p>Stay ahead in medical technology and pharmaceuticals with our innovative solutions...</p>
+          <a href="html/services.html" class="service-link-index">Learn more</a>
+      </div>
+      <div id="service4" class="service-description">
+          <img src="images/data-analytics.jpeg" alt="Data analytics" class="service-image-index" loading="lazy">
+          <p>Unlock the potential of your healthcare data with our AI-powered analytics...</p>
+          <a href="html/services.html" class="service-link-index">Learn more</a>
+      </div>
+      <div id="service5" class="service-description">
+          <img src="images/blockchain.jpeg" alt="Blockchain" class="service-image-index" loading="lazy">
+          <p>Revolutionize healthcare data management with blockchain technology...</p>
+          <a href="html/services.html" class="service-link-index">Learn more</a>
+      </div>
+      <div id="service6" class="service-description">
+          <img src="images/telemedicine.jpeg" alt="Telemedicine" class="service-image-index" loading="lazy">
+          <p>Deliver real-time care and continuous engagement with our robust telehealth platforms...</p>
+          <a href="html/services.html" class="service-link-index">Learn more</a>
+      </div>
+      <div id="service7" class="service-description">
+          <img src="images/mri-machine.jpeg" alt="AI Imaging" class="service-image-index" loading="lazy">
+          <p>Enhance diagnostic accuracy and speed with AI-powered medical imaging tools...</p>
+          <a href="html/services.html" class="service-link-index">Learn more</a>
+      </div>
+      <div id="service8" class="service-description">
+          <img src="images/regulatory-compliance.jpeg" alt="Regulatory compliance" class="service-image-index" loading="lazy">
+          <p>Simplify compliance with healthcare regulations using our automated solutions...</p>
+          <a href="html/services.html" class="service-link-index">Learn more</a>
+      </div>
+  </div>
+</section>
+
 
     <section id="industries-head" class="industries-head">
       <h1> INDUSTRIES WE WORK WITH</h1>
@@ -381,7 +361,7 @@
       </div>
     </footer>
 
-    <script src="script.js" defer></script>
+    <script defer src="script.js" defer></script>
 </body>
 
 </html>
